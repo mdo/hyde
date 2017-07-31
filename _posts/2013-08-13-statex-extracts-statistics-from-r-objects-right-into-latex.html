@@ -1,0 +1,34 @@
+---
+layout: post
+title: 'Statex: extracts statistics from R objects right into latex.'
+categories: []
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _graphene_show_addthis: global
+  _graphene_post_date_display: global
+  _graphene_slider_img: global
+  _graphene_slider_imgurl: ''
+  _edit_last: '1'
+author:
+  login: ylelkes
+  email: yphtach@gmail.com
+  display_name: ylelkes
+  first_name: ''
+  last_name: ''
+---
+<p><a href="https://github.com/SachaEpskamp/staTeX" title="Repository">https://github.com/SachaEpskamp/staTeX</a></p>
+<p>From the description:<br />
+This package can be used to extract and print statistical results in a TeX format for easy inclusion in Sweave.</p>
+<p>Take a t-test.<br />
+<code><br />
+t1 <- t.test(dv~group,var.equal=T)<br />
+</code></p>
+<p>Input it into sweave/knitr<br />
+<code><br />
+\Sexpr{st(t1)}<br />
+</code></p>
+<p>Get this: t(334) =1.72, p < 0.01.</p>
+<p>not bad and works with a number of objects--lm, anova, chi-square.</p>

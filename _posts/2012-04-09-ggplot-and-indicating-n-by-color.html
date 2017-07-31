@@ -1,0 +1,24 @@
+---
+layout: post
+title: ggplot and indicating N by color
+categories: []
+tags: []
+status: draft
+type: post
+published: false
+meta:
+  _edit_last: '1'
+  _graphene_slider_img: global
+  _graphene_slider_imgurl: ''
+  _graphene_show_addthis: global
+  _graphene_post_date_display: global
+author:
+  login: ylelkes
+  email: yphtach@gmail.com
+  display_name: ylelkes
+  first_name: ''
+  last_name: ''
+---
+<p>I don't know if it's an original idea or not.</p>
+<p>But for a paper I'm working on with Jon Krosnick, we plotted the number of times a respondent voted in the past 10 years by the their stated likelihood of voting in the upcoming election across a variety of different scales. We wanted to indicate the number of respondents that used each response option (on the x-axis.) One possibility would to use a <a href="http://had.co.nz/ggplot2/geom_rug.html">rug plot</a>, but there's already a lot going on in these graphs. What we came up with--and we may be reinventing the wheel--was to use a color gradient to indicate N, with darker colors meaning more people used that response option. The result looked something like this:</p>
+<p><a href="http://ylelkes.com/wp-content/uploads/2012/04/votetimesmono.png"><img class="aligncenter size-full wp-image-121" title="votetimesmono" src="assets/votetimesmono.png" alt="" width="9000" height="6000" /></a></p>

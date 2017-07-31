@@ -1,0 +1,28 @@
+---
+layout: post
+title: ggplot and directlabels
+categories: []
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  _syntaxhighlighter_encoded: '1'
+author:
+  login: ylelkes
+  email: yphtach@gmail.com
+  display_name: ylelkes
+  first_name: ''
+  last_name: ''
+---
+<p>i'm not a fan of legends in graphs. in my mind, lines that are labeled directly are easier to read. This is done easily with <a href="http://directlabels.r-forge.r-project.org/"><tt>directlabels</tt>&nbsp;package</a>&nbsp;by Toby Dylan Hocking.</p>
+<p>Just create a ggplot object and wrap it in the command directlabels().</p>
+<p>I used it, for example, to label a plot of abortion preferences overtime by liberal-conservative self-placement. </p>
+<p><a href="http://ylelkes.com/wp-content/uploads/2012/04/abortionbyid1.jpeg"><img src="assets/abortionbyid1.jpeg" alt="" title="abortionbyid" width="4500" height="1575" class="aligncenter size-full wp-image-99" /></a></p>
+<p>[sourcecode language="plain"]<br />
+abortion &lt;- na.omit(ddply(.data=data, .variables=.(year,ideology), .fun=summarise, wtd.mean=mean(x=abortion,na.rm=T,weights=vcf0009a)))<br />
+library(directlabels)<br />
+library(ggplot2)<br />
+direct.label(ggplot(abortion, aes(x = year, y = wtd.mean, colour=ideology)) + geom_line() + theme_bw() + opts(axis.title.x = theme_text(size = 12, vjust = .25)) + ylab(&quot;Support for Abortion Rights&quot;) + opts(legend.position=&quot;&quot;)+ scale_x_continuous(limits=c(1972,2015),breaks=seq(from=1972,to=2008,by=6))+xlab(&quot;Year&quot;),&quot;last.points&quot;)<br />
+[/sourcecode]</p>

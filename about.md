@@ -3,22 +3,14 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included in Hyde as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+<img align="right" src="https://dl.dropboxusercontent.com/u/42416194/ylelkes_01.jpeg"> I  am Assistant Professor of Political Communication at the University of Amsterdam. In September 2016, I will be joining the University of Pennsylvania's Annenberg School for Communication. 
 
-[Hyde](http://mdo.github.io/hyde) is a [Jekyll](http://jekyllrb.com) theme, designed and built by [@mdo](https://twitter.com/mdo). It's an elegant, open source, and mobile first theme for quickly getting a static site up and running.
+My primary focus is on the role of the political information environment in structuring attitudes and beliefs. For instance, I've looked at ways in which broadband access affects polarization, and am now looking at ways in which highspeed Internet impacts social capital and political knowledge. In addition, I study political psychology with a particular focus on the role of political identity in structuring attitudes, which has led to work on polarization, ideology, and partisanship.
 
-## Setup
+I received my PhD in Communication (with a minor in psychology) from Stanford University, an MA in Political Science from Temple University, and a B.A. in Political Science and Journalism and Mass Communication from the University of Wisconsin–Madison.
 
-Some fun facts about the setup of this project include:
+My research has appeared or is forthcoming in various journals across disciplines, including the American Journal of Political Science, the Journal of Politics, PNAS, British Journal of Political Science, Public Opinion Quarterly, Political Psychology, the Journal of Personality and Social Psychology, and the Journal of Experimental Social Psychology.
 
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Fonts PT Sans (headings) and PT Serif (body), and are served by [Google Web Fonts](http://www.google.com/webfonts)
-* Coded with [Sublime Text 2](http://sublimetext.org), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
+[Google Scholar Profile](http://scholar.google.nl/citations?user=agGvWl8AAAAJ&hl=en) 
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/mdo/hyde/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+[Research Gate](https://www.researchgate.net/profile/Yphtach_Lelkes?ev=hdr_xprf)

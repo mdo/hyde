@@ -1,0 +1,33 @@
+---
+layout: post
+title: Insert word count into sweave/knitr documents
+categories:
+- Latex
+- R
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  _graphene_slider_img: global
+  _graphene_slider_imgurl: ''
+  _graphene_show_addthis: global
+  _graphene_post_date_display: global
+author:
+  login: ylelkes
+  email: yphtach@gmail.com
+  display_name: ylelkes
+  first_name: ''
+  last_name: ''
+---
+<p><a href="http://tex.stackexchange.com/questions/44618/dynamically-count-and-return-number-of-words-in-a-section">useful trick found on stackexchange<br />
+</a><br />
+1. install texcount and enable <a href="http://wiki.contextgarden.net/Write18">write18</a>.</p>
+<p>2. add this to your preamble:</p>
+<p><code>\newcommand\wordcount{<br />
+\immediate\write18{texcount -sub=section \jobname.tex | grep "Section" | sed -e 's/+.*//' | sed -n \thesection p &gt; 'count.txt'}<br />
+(\input{count.txt}words)}</p>
+<p></code></p>
+<p>3. Insert the following into your rnw file, changing myfile to the name of your rnw file:<br />
+<code> \makeatletter\@@input|"echo `texcount -1 myfile.tex`| cut -c1-4"\makeatother</code></p>
